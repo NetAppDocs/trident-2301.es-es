@@ -73,13 +73,13 @@ cluster1::*> volume snapshot restore -vserver vs0 -volume vol3 -snapshot vol3_sn
 El replicación de datos puede tener un rol importante en la protección contra la pérdida de datos debido al fallo de la cabina de almacenamiento.
 
 
-NOTE: Para obtener más información sobre las tecnologías de replicación de ONTAP, consulte https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-concepts/GUID-A9A2F347-3E05-4F80-9E9C-CEF8F0A2F8E1.html["Documentación de ONTAP"^].
+NOTE: Si quiere más información sobre las tecnologías de replicación de ONTAP, consulte la https://docs.netapp.com/us-en/ontap/concepts/snapshot-copies-concept.html["Documentación de ONTAP"^].
 
 
 
 === Replicación de SnapMirror Storage Virtual Machines (SVM)
 
-Puede utilizar https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-concepts/GUID-8B187484-883D-4BB4-A1BC-35AC278BF4DC.html["SnapMirror"^] Para replicar una SVM completa, que incluye su configuración y sus volúmenes. En caso de desastre, puede activar la SVM de destino de SnapMirror para empezar a servir datos. Puede volver al primario cuando se restauren los sistemas.
+Se puede usar https://docs.netapp.com/us-en/ontap/concepts/snapmirror-disaster-recovery-data-transfer-concept.html["SnapMirror"^] para replicar una SVM completa, que incluye sus opciones de configuración y sus volúmenes. En caso de desastre, puede activar la SVM de destino de SnapMirror para empezar a servir datos. Puede volver al primario cuando se restauren los sistemas.
 
 Astra Trident no puede configurar las relaciones de replicación por sí mismo, de modo que el administrador de almacenamiento pueda usar la función de replicación de SVM de SnapMirror de ONTAP para replicar automáticamente volúmenes en un destino de recuperación ante desastres (DR).
 
@@ -131,7 +131,7 @@ A continuación se ofrece información general de los pasos de configuración de
 
 * Configure una relación entre los clústeres en los que residen los volúmenes y las SVM que sirven datos de los volúmenes.
 * Cree una política de SnapMirror, que controla el comportamiento de la relación y especifica los atributos de configuración de esa relación.
-* Cree una relación de SnapMirror entre el volumen de destino y el de origen mediante la[`snapmirror create` Command] y asigne la política de SnapMirror correspondiente.
+* Cree una relación de SnapMirror entre el volumen de destino y el volumen de origen mediante[`snapmirror create` el comando^] y asigne la política de SnapMirror adecuada.
 * Una vez creada la relación de SnapMirror, inicialice la relación de forma que haya completado una transferencia inicial desde el volumen de origen al volumen de destino.
 
 
