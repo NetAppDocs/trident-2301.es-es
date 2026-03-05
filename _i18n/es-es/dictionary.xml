@@ -159,12 +159,6 @@
   <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="doc">Versiones anteriores de la documentación</block>
   <block id="3fe5d266a33f137293c314a2e334b611" category="inline-link">Astra Trident 22.10</block>
   <block id="9fefe9ff51badc61edd8a36c8240aa29" category="list-text"><block ref="9fefe9ff51badc61edd8a36c8240aa29" category="inline-link-rx"></block></block>
-  <block id="21d437ff7c8ceb5481603b5d2c05442a" category="inline-link">Astra Trident 22.07</block>
-  <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
-  <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
-  <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
-  <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
-  <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
   <block id="b928e0aee19c1e2cc91c85e8a0856936" category="summary">Utilice los punteros que se proporcionan aquí para solucionar problemas que puedan surgir durante la instalación y el uso de Astra Trident.</block>
   <block id="231cf4c70d866b616c21baddaeed0696" category="doc">Resolución de problemas</block>
   <block id="8ef0ab9bbedaa7608c9abed7c7213218" category="admonition">Si necesita ayuda con Astra Trident, cree un paquete de soporte con<block ref="1d41e2024c69110ad6054ffc785ca8e0" prefix=" " category="inline-code"></block> y envíelo a.<block ref="da34ca64df3f236a423516102d4096c2" prefix=" " category="inline-code"></block>.</block>
@@ -3640,4 +3634,5 @@
   <block id="bfe205fb40c84219c58294b919b0802b" category="paragraph">Amazon FSx para NetApp ONTAP utiliza<block ref="100bdb811c1b823e066dd7c237e74575" category="inline-link-rx"></block> para gestionar los niveles de almacenamiento. Le permite almacenar datos en un nivel, según la frecuencia de acceso a estos.</block>
   <block id="15eaa3bd461b989a50d54376e8b82942" category="example-title">Administración de clústeres de Kubernetes mediante la NetApp Console</block>
   <block id="28cfb8f261719a05032a41acccc32995" category="paragraph">Con Astra Trident mediante la NetApp Console, puede actualizar a la última versión de Astra Trident, agregar y administrar clases de almacenamiento y conectarlas a entornos de trabajo, y realizar copias de seguridad de volúmenes persistentes mediante el Cloud Backup Service. La consola admite la implementación de Astra Trident mediante el operador Trident , ya sea manualmente o usando Helm.</block>
+  <block id="b09c1c20916b590511efd54db64df61c" category="paragraph">++ NOTA: después de ejecutar este comando, ONTAP solicita la introducción del certificado. Pega el contenido del <block ref="0c7b1ee06b5fdaab7c83f24275255cf5" prefix=" " category="inline-code"></block> archivo generado en el paso 1, luego introduce <block ref="b1a326c06d88bf042f73d70f50197905" prefix=" " category="inline-code"></block> para completar la instalación.</block>
 </blocks>
